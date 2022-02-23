@@ -4,7 +4,7 @@ public class AliS1 {
 
     public static void main(String[] args) {
 
-        System.out.println("group12");
+        System.out.println("group12 ");
 
 
     }
