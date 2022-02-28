@@ -34,26 +34,26 @@ public class UserStory14 {
         Thread.sleep(3000);
 
         WebElement macOS = driver.findElement(By.xpath("//a[@style='width: 33%;']"));
-        String actual1 = macOS.getText();
-        String expected1 = "MAC OS";
-        Assert.assertEquals(actual1, expected1, "Verification failed");
+        String actual = macOS.getText();
+        String expected = "MAC OS";
+        Assert.assertEquals(actual, expected, "Verification failed");
 
         WebElement windows = driver.findElement(By.xpath("//a[@style='width: 37%;']"));
-        String actual2 = windows.getText();
-        String expected2 = "WINDOWS";
-        Assert.assertEquals(actual2, expected2, "Verification failed");
+        actual = windows.getText();
+        expected = "WINDOWS";
+        Assert.assertEquals(actual, expected, "Verification failed");
 
         WebElement linux = driver.findElement(By.xpath("//a[@href='https://github.com/buglloc/brick']"));
-        String actual3 = linux.getText();
-        String expected3 = "LINUX";
-        Assert.assertEquals(actual3, expected3, "Verification failed");
+        actual = linux.getText();
+        expected = "LINUX";
+        Assert.assertEquals(actual, expected, "Verification failed");
 
 
     }
 
     @AfterMethod
     public void tearDown() {
-        //driver.quit();
+        //driver.close();
     }
 
 
